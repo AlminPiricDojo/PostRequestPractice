@@ -42,6 +42,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add" />
+
+        <Button
+            android:id="@+id/btUpdateDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update / Delete User" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

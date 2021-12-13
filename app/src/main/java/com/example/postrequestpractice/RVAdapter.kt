@@ -18,6 +18,7 @@ class RVAdapter(private var users: Users): RecyclerView.Adapter<RVAdapter.ItemVi
         holder.binding.apply {
             tvName.text = user.name
             tvLocation.text = user.location
+            tvPk.text = "Pk: ${user.pk}"
         }
     }
 

@@ -1,5 +1,6 @@
 package com.example.postrequestpractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etName: EditText
     private lateinit var etLocation: EditText
     private lateinit var btAdd: Button
+    private lateinit var btUpdateDelete: Button
 
     private lateinit var users: Users
 
@@ -67,6 +69,11 @@ class MainActivity : AppCompatActivity() {
                 }
 
             })
+        }
+        btUpdateDelete = findViewById(R.id.btUpdateDelete)
+        btUpdateDelete.setOnClickListener {
+            val intent = Intent(this, UpdateDeleteUser::class.java)
+            startActivity(intent)
         }
     }
 }
